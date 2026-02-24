@@ -1,0 +1,100 @@
+:root {
+    --azul-noche: #0b1a2a;
+    --oro-vin: #fdb813;
+    --celeste-v-Gogh: #5eb5e0; 
+}
+body {
+    margin: 0;
+    background-color: var(--azul-noche);
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    overflow-x: hidden;
+}
+
+canvas {
+    position: fixed;
+    top: 0; left: 0;
+    z-index: -1;
+}
+
+.section {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 40px 20px;
+}
+
+.glass-card {
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    padding: 3rem;
+    border-radius: 20px;
+    text-align: center;
+    max-width: 600px;
+}
+
+.titulo-vin {
+    font-family: 'Dancing Script', cursive;
+    font-size: 3.5rem;
+    color: var(--oro-vin);
+    margin-bottom: 10px;
+}
+
+.foto-marco {
+    width: 200px;
+    height: 200px;
+    margin: 0 auto 20px;
+    border-radius: 50%;
+    border: 4px solid var(--oro-vin);
+    overflow: hidden;
+    box-shadow: 0 0 20px var(--oro-vin);
+}
+
+.foto-marco img { width: 100%; height: 100%; object-fit: cover; }
+
+.btn-estelar {
+    background: var(--oro-vin);
+    border: none;
+    padding: 12px 30px;
+    border-radius: 25px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+    margin-top: 20px;
+}
+
+.btn-estelar:hover { transform: scale(1.1); box-shadow: 0 0 15px var(--oro-vin); }
+
+/* Grid de Estrellas */
+.grid-estrellas {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(70px, 1fr));
+    gap: 20px;
+    max-width: 800px;
+    width: 100%;
+}
+
+.star-icon {
+    width: 60px;
+    height: 60px;
+    background: var(--oro-vin);
+    clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+    cursor: pointer;
+    transition: 0.4s;
+}
+
+.star-icon:hover { background: white; transform: rotate(144deg) scale(1.2); }
+
+/* Carta */
+.carta-container {
+    background: #fffdf0;
+    color: #333;
+    padding: 40px;
+    border-radius: 5px;
+    max-width: 500px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+    transform: rotate(-2deg);
+}

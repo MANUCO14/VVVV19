@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Para Mi Estrella Favorita 🌌</title>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.5.1/dist/confetti.browser.min.js"></script>
+</head>
+<body>
+
+    <canvas id="starCanvas"></canvas>
+
+    <section class="section" id="portada">
+        <div class="glass-card">
+            <div class="foto-marco">
+                <img src="portada.jpeg" alt="Tú">
+            </div>
+            <h1 class="titulo-vin">19 Años de Luz</h1>
+            <p class="subtitulo">"Hoy el mundo celebra tu existencia... pero yo celebro que existas en mi vida."</p>
+            <button class="btn-estelar" onclick="scrollToId('timeline')">¿Lista para nuestro camino?</button>
+        </div>
+    </section>
+
+    <section class="section" id="timeline">
+        <h2 class="section-title">Nuestra Historia en Pinceladas</h2>
+        <div class="timeline-container">
+            <div class="time-card">
+                <h3>2022</h3>
+                <img src="foto1.jpg" class="img-timeline">
+                <p>Donde todo empezó</p>
+            </div>
+            <div class="time-card">
+                <h3>2023</h3>
+                <img src="foto2.jpg" class="img-timeline">
+                <p>Superando distancias</p>
+            </div>
+            <div class="time-card">
+                <h3>2024/25</h3>
+                <img src="foto3.jpg" class="img-timeline">
+                <p>Más fuertes que nunca</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="section">
+        <h2 class="section-title">19 Razones para Sonreír</h2>
+        <div class="grid-estrellas" id="gridEstrellas">
+            </div>
+    </section>
+
+    <section class="section" id="regalo">
+        <div id="envelope" class="envelope-wrapper" onclick="openGift()">
+            <div class="envelope">
+                <div class="heart"></div>
+            </div>
+            <p>Toca para abrir tu regalo</p>
+        </div>
+
+        <div id="carta" class="carta-container" style="display:none;">
+            <h2 class="titulo-vin">Mi Promesa para Ti</h2>
+            <div class="texto-carta">
+                <p>Aquí va tu mensaje más profundo... (puedes escribir mucho aquí)</p>
+                <p>Gracias por estos años a mi lado.</p>
+            </div>
+            <audio id="musicaEve" src="musica.mp3" preload="auto"></audio>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
