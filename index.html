@@ -15,7 +15,7 @@
     <section class="section" id="portada">
         <div class="glass-card">
             <div class="foto-marco">
-                <img src="portada.jpeg" alt="Tú">
+                <img src="portada.jpeg" alt="Tú y Yo">
             </div>
             <h1 class="titulo-vin">19 Años de Luz</h1>
             <p class="subtitulo">"Hoy el mundo celebra tu existencia... pero yo celebro que existas en mi vida."</p>
@@ -24,27 +24,57 @@
     </section>
 
     <section class="section" id="timeline">
-        <h2 class="section-title">Nuestra Historia en Pinceladas</h2>
-        <div class="timeline-container">
-            <div class="time-card">
-                <h3>2022</h3>
-                <img src="foto1.jpg" class="img-timeline">
-                <p>Donde todo empezó</p>
+        <h2 class="section-title">Nuestra Historia en el Cosmos</h2>
+        
+        <div class="universo-fotos">
+            <div class="astro-foto" style="--delay: 0s; --x: -15%;">
+                <div class="marco-lienzo">
+                    <img src="foto1.jpg" alt="Año 1">
+                </div>
+                <div class="astro-texto">
+                    <h3>2022/2023</h3>
+                    <p>Donde todo empezó mi corazon, era algo nuevo para
+                    los dos, eramos jovenes pero con un gran amor entre los dos</p>
+                </div>
             </div>
-            <div class="time-card">
-                <h3>2023</h3>
-                <img src="foto2.jpg" class="img-timeline">
-                <p>Superando distancias</p>
+
+            <div class="astro-foto" style="--delay: 2s; --x: 15%;">
+                <div class="marco-lienzo">
+                    <img src="foto2.jpg" alt="Año 2">
+                </div>
+                <div class="astro-texto">
+                    <h3>2024</h3>
+                    <p>Superando distancias o no??, Antes de que te fueras.
+                        Ese cumpleaños fue el más arriesgado con 
+                        una salida casi de la nada a la laguna;
+                         pasamos tu cumple juntos con miedo de 
+                         qué sería de nosotros, pero sabiendo 
+                         en el corazón que nos amamos como 
+                         nunca.</p>
+                </div>
             </div>
-            <div class="time-card">
-                <h3>2024/25</h3>
-                <img src="foto3.jpg" class="img-timeline">
-                <p>Más fuertes que nunca</p>
+
+            <div class="astro-foto" style="--delay: 4s; --x: -5%;">
+                <div class="marco-lienzo">
+                    <img src="foto3.jpg" alt="Año 3">
+                </div>
+                <div class="astro-texto">
+                    <h3>2025</h3>
+                    <p>Más fuertes que nunca, obvio si, despues de todo lo
+                    2024 y tu estadia virtual, tu cumpleañosse celebro de 
+                    una manera un tanto extraña, 
+                    Regresaste de la academia y en esa videollamada 
+                        cantamos cumpleañitos felices e incluso me dejaste 
+                        hablando con tu mamá. Una forma única de celebrar, 
+                        única como tú mi amor.
+                    La imagenes son de los años correspondientes pero no de tu cumple pq no hay fotos
+                    a ver si este año sacamos una pa el recuerdo mi amore</p>
+                </div>
             </div>
         </div>
     </section>
 
-    <section class="section">
+    <section class="section" id="razones-section">
         <h2 class="section-title">19 Razones para Sonreír</h2>
         <div class="grid-estrellas" id="gridEstrellas">
             </div>
@@ -61,12 +91,33 @@
         <div id="carta" class="carta-container" style="display:none;">
             <h2 class="titulo-vin">Mi Promesa para Ti</h2>
             <div class="texto-carta">
-                <p>Aquí va tu mensaje más profundo... (puedes escribir mucho aquí)</p>
-                <p>Gracias por estos años a mi lado.</p>
+                <p>Mi amorcito linda y Preciosa, un dia como estos una niña
+                    como dices tu berrinchuda y que lloraba fuerte nacio, yo ni habia
+                    nacido, pero el destino y Dios sabia que esa niña creceria y seria mi 
+                    compañera de vida.
+                    Una vez mas agradecer a Dios por que estes aqui conmigo y con la gente
+                    que te ama y te quiere mucho muchismoooo. Y gracias a ti
+                    por permitirme ser parte de ti, y de nuestra historia juntos.
+                    Que este cumpleaños la pases exelente mi princesita con las gente que te amamos
+                    muuuaaaa a ver si nos damos un tiempo pa los dos tmb jsjsjasa
+                    Te amo mucho mi amor y por mas cumpleaños pa celebrarlo juntos 
+                    de la forma en la que sea pq somos unicos en nuestras formas de compartir
+                    Con mucho cariño tu principe.
+                    La cancion es "Pronostico del corazon-Eve" sasjaas
+                </p>
+                <p>Gracias por estos 19 años de ser tú. Por muchos más juntos.</p>
             </div>
             <audio id="musicaEve" src="musica.mp3" preload="auto"></audio>
         </div>
     </section>
+
+    <div id="modal-mensaje" class="modal-estelar-wrap" onclick="cerrarMensaje()">
+        <div class="modal-contenido" onclick="event.stopPropagation()">
+            <span class="cerrar-modal" onclick="cerrarMensaje()">&times;</span>
+            <div class="decoracion-modal">✨</div>
+            <p id="texto-razon"></p>
+        </div>
+    </div>
 
     <script src="script.js"></script>
 </body>
